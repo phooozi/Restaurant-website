@@ -33,32 +33,32 @@
           <li>
             <span>Pork Eggroll (1)</span>
             <span>$2.00</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="Pork Eggroll (1)" data-price="2.00">Add to order</button>
           </li>
           <li>
             <span>Shrimp Eggroll (1)</span>
             <span>$2.20</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="Shrimp Eggroll (1)" data-price="2.20">Add to order</button>
           </li>
           <li>
             <span>Vegetable Eggrolls (2)</span>
             <span>$2.20</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="Vegetable Eggrolls (2)" data-price="2.20">Add to order</button>
           </li>
           <li>
             <span>Chicken Teriyaki</span>
             <span>$3.30</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="Chicken Teriyaki" data-price="3.30">Add to order</button>
           </li>
           <li>
             <span>Chicken Wings (4)</span>
             <span>$8.60</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="Chicken Wings (4)" data-price="8.60">Add to order</button>
           </li>
           <li>
             <span>French Fries</span>
             <span>$3.50</span>
-            <button type="button">Add to order</button>
+            <button type="button" data-item="French Fries" data-price="3.50">Add to order</button>
           </li>
         </ul>
       </section>
@@ -78,7 +78,9 @@
 
     <section id="order" aria-labelledby="order-heading">
       <h2 id="order-heading">Your Order</h2>
-      <p>Your selected items will appear here.</p>
+      <ul id="order-items">
+        <li>Your selected items will appear here.</li>
+      </ul>
       <p>Total: <span id="order-total">$0.00</span> plus tax</p>
     </section>
 
