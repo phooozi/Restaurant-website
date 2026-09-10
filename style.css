@@ -192,6 +192,26 @@ button {
 	padding-left: 1.25rem;
 }
 
+#order-items li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+	padding: 0.5rem 0;
+}
+
+#order-items button {
+	flex: 0 0 auto;
+	color: var(--dark-red);
+	background: transparent;
+	border: 1px solid var(--dark-red);
+}
+
+#order-items button:hover {
+	color: #fff;
+	background: var(--dark-red);
+}
+
 #order-total {
 	color: var(--dark-red);
 	font-size: 1.25rem;
