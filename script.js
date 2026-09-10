@@ -1,6 +1,7 @@
 const addButtons = document.querySelectorAll(".menu-items button");
 const orderItems = document.querySelector("#order-items");
 const orderTotal = document.querySelector("#order-total");
+const clearOrderButton = document.querySelector("#clear-order");
 const cart = new Map();
 
 function renderOrder() {
@@ -11,6 +12,7 @@ function renderOrder() {
 		emptyOrderMessage.textContent = "Your selected items will appear here.";
 		orderItems.append(emptyOrderMessage);
 		orderTotal.textContent = "$0.00";
+		clearOrderButton.disabled = true;
 		return;
 	}
 
@@ -36,7 +38,13 @@ function renderOrder() {
 	});
 
 	orderTotal.textContent = `$${total.toFixed(2)}`;
+	clearOrderButton.disabled = false;
 }
+
+clearOrderButton.addEventListener("click", () => {
+	cart.clear();
+	renderOrder();
+});
 
 addButtons.forEach((button) => {
 	button.addEventListener("click", () => {
