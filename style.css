@@ -138,6 +138,31 @@ button:hover {
 	grid-column: 1 / -1;
 }
 
+.menu-categories {
+	display: flex;
+	grid-column: 1 / -1;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: center;
+	margin: -0.5rem 0 1rem;
+}
+
+.menu-categories a {
+	padding: 0.45rem 0.7rem;
+	color: var(--dark-red);
+	background: var(--cream);
+	border: 1px solid var(--line);
+	border-radius: 999px;
+	font-size: 0.85rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.menu-categories a:hover {
+	color: #fff;
+	background: var(--red);
+}
+
 #menu > section {
 	padding: 1.5rem;
 	background: #fffdf8;
@@ -257,6 +282,11 @@ address {
 
 	#menu {
 		display: block;
+	}
+
+	.menu-categories {
+		justify-content: flex-start;
+		margin: 0 0 1.5rem;
 	}
 
 	#menu > section {
