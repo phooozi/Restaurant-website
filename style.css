@@ -181,7 +181,22 @@ button {
 	font-weight: bold;
 }
 
-#order,
+#order {
+	position: sticky;
+	top: 4.2rem;
+	z-index: 5;
+	margin: 2rem 0;
+	padding: 1.25rem 1.5rem;
+	background: #fffdf8;
+	border: 2px solid var(--gold);
+	box-shadow: var(--shadow);
+}
+
+#order h2 {
+	margin-bottom: 0.75rem;
+	font-size: 1.75rem;
+}
+
 #contact {
 	border-top: 1px solid var(--line);
 }
@@ -246,6 +261,11 @@ address {
 
 	#menu > section {
 		margin-bottom: 1.5rem;
+	}
+
+	#order {
+		position: static;
+		margin: 1.5rem 0;
 	}
 
 	.menu-items li {
